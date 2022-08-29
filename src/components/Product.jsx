@@ -14,7 +14,7 @@ const Product = (props) => {
     },
     body: JSON.stringify(product)
    })
-   if(data.status==201){
+   if(data.status===201){
     console.log("count")
     setCount(1)
    }
@@ -25,7 +25,7 @@ const Product = (props) => {
     method: 'DELETE',
    })
    console.log(data)
-    if(data.status==200){
+    if(data.status===200){
       setCount(0)
     }   
   
